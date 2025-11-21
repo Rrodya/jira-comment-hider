@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIRA Comment Hider</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>JIRA Comment Hider</h1>
+    
+    <div class="section">
+      <label for="enabled-toggle" class="toggle-label">
+        <input type="checkbox" id="enabled-toggle" class="toggle-input">
+        <span class="toggle-slider"></span>
+        <span class="toggle-text">Включить скрытие комментариев</span>
+      </label>
+    </div>
+
+    <div class="section">
+      <label for="username-input">Имя пользователя JIRA:</label>
+      <input 
+        type="text" 
+        id="username-input" 
+        placeholder="Например: JIRA Gitlab Bot"
+        class="input-field"
+      >
+      <div class="hint">Введите полное имя пользователя, комментарии которого нужно скрыть</div>
+    </div>
+
+    <div class="section">
+      <button id="save-btn" class="save-button">Сохранить</button>
+      <div id="status-message" class="status-message"></div>
+    </div>
+
+    <div class="section">
+      <div class="info">
+        <strong>Текущие настройки:</strong>
+        <div id="current-settings"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
