@@ -13,7 +13,7 @@
 
 1.  **Склонируйте репозиторий:**
     ```bash
-    git clone [https://github.com/ваш-логин/ваш-репозиторий.git]
+    git clone https://github.com/Rrodya/jira-comment-hider
     ```
     *Или скачайте и распакуйте ZIP-архив.*
 
